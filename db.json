@@ -1,0 +1,36 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "username": "Caroline",
+      "age": 20,
+      "address": "cjouanny0@mtv.com",
+      "department": "Female",
+      "salary": 31,
+      "maritalstatus": 20,
+      "pic": "sports"
+    },
+    {
+      "username": "MOAZZEM HOSEN SARDAR",
+      "Age": "20000",
+      "Address": "neruli",
+      "Department": "FullStack",
+      "ismarried": true,
+      "photo": {
+        "0": {}
+      },
+      "id": 2
+    },
+    {
+      "username": "MOAZZEM HOSEN SARDAR",
+      "Age": "30000000",
+      "Address": "30",
+      "Department": "Frontend",
+      "ismarried": true,
+      "photo": {
+        "0": {}
+      },
+      "id": 3
+    }
+  ]
+}

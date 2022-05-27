@@ -1,0 +1,13 @@
+td {
+    border: 2px solid rgb(0, 0, 0)
+}
+
+th {
+    border: 2px solid rgb(229, 27, 27)
+}
+
+.sortorder {
+    display: flex;
+    justify-content: space-around;
+
+}
