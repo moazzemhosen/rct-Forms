@@ -1,36 +1,38 @@
 {
   "employees": [
     {
-      "id": 1,
-      "username": "Caroline",
-      "age": 20,
-      "address": "cjouanny0@mtv.com",
-      "department": "Female",
-      "salary": 31,
-      "maritalstatus": 20,
-      "pic": "sports"
-    },
-    {
+      "ismarried": true,
       "username": "MOAZZEM HOSEN SARDAR",
-      "Age": "20000",
+      "Age": "24",
       "Address": "neruli",
       "Department": "FullStack",
-      "ismarried": true,
-      "photo": {
-        "0": {}
-      },
+      "Salary": "3000",
+      "id": 1
+    },
+    {
+      "ismarried": false,
+      "username": "moazzemfw15_141@masai.school",
+      "Age": "34",
+      "Address": "kol",
+      "Salary": "3000",
       "id": 2
     },
     {
-      "username": "MOAZZEM HOSEN SARDAR",
-      "Age": "30000000",
-      "Address": "30",
-      "Department": "Frontend",
       "ismarried": true,
-      "photo": {
-        "0": {}
-      },
-      "id": 3
+      "username": "MOAZZEM HOSEN SARDAR",
+      "Age": "24",
+      "Address": "neruli",
+      "Department": "FullStack",
+      "Salary": "3000",
+      "id": 1
+    },
+    {
+      "ismarried": false,
+      "username": "moazzemfw15_141@masai.school",
+      "Age": "34",
+      "Address": "kol",
+      "Salary": "3000",
+      "id": 2
     }
   ]
 }

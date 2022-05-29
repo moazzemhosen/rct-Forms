@@ -1,17 +1,24 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./show.css";
+import Table from "./Table";
+
+// import Table from "./Table";
+
 
 const Form = () => {
-    const [form, setForm] = useState({});
-    
-    
-
+  const [form, setForm] = useState({
+    ismarried:false,
+  });
+  
+  
+  
+// console.log("e",employees);
   const handleChange = (e) => {
+    console.log("ee",e.target.Files.File);
     let { name, value, type, checked, files } = e.target;
     console.log(type, name, value, checked, files);
-      
-      
+
     if (type === "checkbox") {
       setForm({
         ...form,
@@ -28,27 +35,30 @@ const Form = () => {
         [name]: value,
       });
     }
-    };
+  };
+
+
+  const handleOnSubmit = (e) => {
+    // e.preventDefault();
     
-    // useEffect(() => {
-        
-    // })
-    const handleOnSubmit = (e) => {
-      e.preventDefault();
-        console.log(form);
-         axios
-           .post("http://localhost:8080/employees",{
-             ...form,
-           })
-           .then(function (response) {
-             console.log(response);
-           })
-           .catch(function (err) {
-             console.log(err);
-           });
-        
-       
-    };
+
+    axios
+      .post("http://localhost:8080/employees", {
+        ...form,
+      })
+      .then(function (response) {
+        console.log("res", response.data);
+      
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+    
+   
+    
+  };
+
+
   return (
     <div>
       Form:
@@ -97,7 +107,7 @@ const Form = () => {
           <label>Salary: </label>
           <input
             type="number"
-            name="Age"
+            name="Salary"
             value={form.name}
             onChange={handleChange}
           />
@@ -108,7 +118,7 @@ const Form = () => {
           <input
             type="checkbox"
             name="ismarried"
-            checked={form.ismarried}
+            checked={form.name}
             onChange={handleChange}
           />
         </div>
@@ -118,15 +128,16 @@ const Form = () => {
           <input
             type="file"
             name="photo"
-            files={form.name}
+            files={form.photo}
             onChange={handleChange}
           />
         </div>
         <button type="submit">Save Data</button>
       </form>
-     
+      <Table />
     </div>
   );
+  
 };
 
 export default Form;
